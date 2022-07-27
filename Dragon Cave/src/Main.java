@@ -14,7 +14,7 @@ public class Main {
                 "Which cave will you go into? (1 or 2)");
 
         //generate "winning" cave and "losing" cave
-        int caveGen = num.nextInt(100), winCave, loseCave;
+        int caveGen = num.nextInt(), winCave, loseCave;
         if(caveGen%2 == 0){
             winCave = 1;
             loseCave = 2;
