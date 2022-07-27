@@ -29,6 +29,6 @@ public class Main {
                 return;
             }
         }
-        System.out.printf("Sorry. You only had 6 guesses. Better luck next time, %s! SCrew you!!!", userName);
+        System.out.printf("Sorry. You only had 6 guesses. Better luck next time, %s!", userName);
     }
 }
