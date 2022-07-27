@@ -2,6 +2,9 @@
 ### This is the Github repo for all my GenSpark Projects
 
 ---
-Project1: Dragon's Cave  
-Project2: Guess The Number  
-Project3: Adding exception handling to Projects 1 & 2  
+Project|Title|Status
+---|---|---
+1 | Dragon's Cave | Done
+2 | Guess The Number | Done
+3 | Exception Handling | Done
+4 | Unit Testing | InProgress
