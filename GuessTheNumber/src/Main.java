@@ -17,11 +17,11 @@ public class Main {
             guessCount++;
 
             if(guess > num){
-                System.out.println("Your guess is too high.\nTake a guess.\n");
+                System.out.println("Your guess is too high.\nTake a guess.");
                 guess = userInput.nextInt();
             }
             else if(guess < num){
-                System.out.println("Your guess is too low.\nTake a guess.\n");
+                System.out.println("Your guess is too low.\nTake a guess.");
                 guess = userInput.nextInt();
             }
             else {
@@ -29,6 +29,6 @@ public class Main {
                 return;
             }
         }
-        System.out.printf("Sorry. You only had 6 guesses. Better luck next time, %s!", userName);
+        System.out.printf("Sorry. You only had 6 guesses. Better luck next time, %s! SCrew you!!!", userName);
     }
 }
