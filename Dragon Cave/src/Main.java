@@ -2,8 +2,8 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
+    static Scanner userInput = new Scanner(System.in);
     public static void main(String[] args){
-        Scanner userInput = new Scanner(System.in);
         Random num = new Random();
 
         //Intro Sequence
@@ -25,11 +25,12 @@ public class Main {
         }
 
         //User Input and win/lose
-        int input = userInput.nextInt();
+        int input = 0;
+        input = GetUserInput();
 
         while (input  != winCave && input != loseCave){
             System.out.println("You chose: " + input + "\n...Please choose 1 or 2...\n");
-            input = userInput.nextInt();
+            input = GetUserInput();
         }
 
         System.out.println("You approach the cave...\n" +
@@ -48,4 +49,19 @@ public class Main {
                     "There's only two; this shouldn't even be an option.");
         }
     }
+
+    private static int GetUserInput() {
+        int output = 999;
+        try {
+            output = userInput.nextInt();
+        } catch (Exception error) {
+            System.out.println("That clearly didn't work...\n" +
+                    "I asked for a number...\n" +
+                    "Try Again.");
+            userInput.next();
+            output = GetUserInput();
+        }
+        return output;
+    }
+
 }
