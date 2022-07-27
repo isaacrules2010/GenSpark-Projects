@@ -37,7 +37,7 @@ public class Main {
                 "A large dragon jumps out in front of you! He opens his jaws and...");
         if(input == winCave){
             //win text
-            System.out.println("Offers you some of his Treaure!");
+            System.out.println("Offers you some of his Treasure!");
         }
         else if (input == loseCave) {
             //lose condition
