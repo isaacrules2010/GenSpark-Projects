@@ -38,7 +38,6 @@ public class Main {
         System.out.printf("Sorry. You only had 6 guesses. Better luck next time, %s!\n", userName);
         userInput.nextLine();
         PlayAgain(userName);
-        return;
     }
 
     private static void PlayAgain(String userName){
