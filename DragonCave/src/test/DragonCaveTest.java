@@ -61,10 +61,10 @@ class DragonCaveTest {
 
     @DisplayName("input too high")
     @Test
-    void testOTooHigh(){
+    void testTooHigh(){
         String testInput = "999999\r\n";
         System.setIn(new ByteArrayInputStream(testInput.getBytes()));
-        assertEquals(1, testCave.setPlayerChoice(), "String Test Failed");
+        assertEquals(1, testCave.setPlayerChoice(), "High Int Test Failed");
     }
 
     @DisplayName("input too low")
@@ -72,7 +72,7 @@ class DragonCaveTest {
     void testTooLow(){
         String testInput = "0\r\n";
         System.setIn(new ByteArrayInputStream(testInput.getBytes()));
-        assertEquals(1, testCave.setPlayerChoice(), "String Test Failed");
+        assertEquals(1, testCave.setPlayerChoice(), "Low Int Test Failed");
     }
 
     @AfterEach
