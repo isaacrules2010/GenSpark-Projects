@@ -8,3 +8,4 @@ Project|Title|Status
 2 | GuessTheNumber | Rewritten
 3 | Exception Handling | Done
 4 | Unit Testing | Done
+5 | Hangman | Done
