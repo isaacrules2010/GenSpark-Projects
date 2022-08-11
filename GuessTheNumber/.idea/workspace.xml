@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a556aa2f-7183-4fee-86aa-d68f3cb91a11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GuessTheNumber/GuessTheNumber.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/test/GuessTheNumber/GuessTheNumberTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/GuessTheNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/GuessTheNumberTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DragonCave/src/test/DragonCaveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DragonCave/src/test/DragonCaveTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GuessTheNumber.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GuessTheNumber.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GuessTheNumber/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hangman/src/java/Hangman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +53,14 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GuessTheNumberTest">
+  <component name="RunManager" selected="Application.GuessTheNumber">
+    <configuration name="GuessTheNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GuessTheNumber" />
+      <module name="GuessTheNumber" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GuessTheNumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GuessTheNumber" />
       <option name="PACKAGE_NAME" value="" />
@@ -94,16 +90,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GuessTheNumberTest.getGuessPassCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="GuessTheNumber" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GuessTheNumberTest" />
-      <option name="METHOD_NAME" value="getGuessPassCase" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="GuessTheNumberTest.setWinNumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="GuessTheNumber" />
       <option name="PACKAGE_NAME" value="" />
@@ -116,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GuessTheNumber" />
         <item itemvalue="JUnit.GuessTheNumberTest" />
         <item itemvalue="JUnit.GuessTheNumberTest.checkGuessEquals" />
         <item itemvalue="JUnit.GuessTheNumberTest.setWinNumTest" />
         <item itemvalue="JUnit.GuessTheNumberTest.getGuessFailCase" />
-        <item itemvalue="JUnit.GuessTheNumberTest.getGuessPassCase" />
       </list>
     </recent_temporary>
   </component>
