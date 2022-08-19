@@ -9,3 +9,4 @@ Project|Title|Status
 3 | Exception Handling | Done
 4 | Unit Testing | Done
 5 | Hangman | Done
+6 | Humans vs Goblins | Done
