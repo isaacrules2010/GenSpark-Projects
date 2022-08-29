@@ -30,17 +30,27 @@ class HangmanTest {
 
     @Test
     void checkGuess() {
+        testGame.setWord("cat");
         String testInput = "a";
+        String testInput2 = "b";
         testGame.setUserInput(new ByteArrayInputStream(testInput.getBytes()));
         testGame.checkGuess(testGame.getCharFromStream());
         assertEquals(testInput, testGame.getGuesses(), "Failed to append new guess");
+        testGame.setUserInput(new ByteArrayInputStream(testInput.getBytes()));
+        testGame.checkGuess(testGame.getCharFromStream());
+        assertEquals(testInput, testGame.getGuesses(), "Failed to prevent double guesses");
+        testGame.setUserInput(new ByteArrayInputStream(testInput2.getBytes()));
+        testGame.checkGuess(testGame.getCharFromStream());
+        assertEquals(testInput+testInput2, testGame.getGuesses(), "Failed to append new guess");
     }
 
     @Test
     void getGuessCount() {
         testGame.setWord("cat");
         testGame.checkGuess('b');
-        assertEquals(1, testGame.getGuessCount(), "failed to incremement failed guesses");
+        assertEquals(1, testGame.getGuessCount(), "failed to increment failed guesses");
+        testGame.checkGuess('a');
+        assertEquals(1, testGame.getGuessCount(), "failed to verify correct guess");
     }
 
     @AfterEach
