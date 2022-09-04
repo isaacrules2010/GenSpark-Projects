@@ -88,6 +88,7 @@ public class HVGR {
         bottomHalf = new JPanel();
         fullDisplay = new JPanel();
         gameDisplay = new JTextArea();
+        gameDisplay.setEditable(false);
 
         up = new JButton("Up");
         down = new JButton("Down");
@@ -235,6 +236,7 @@ public class HVGR {
            roundCount = 0;
            populateMap(5);
            gameTimer.start();
+           loseFrame.setVisible(false);
         });
     }
 

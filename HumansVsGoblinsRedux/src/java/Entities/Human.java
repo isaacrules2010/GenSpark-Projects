@@ -56,15 +56,16 @@ public class Human extends Creature {
             text += ("Whiff! You missed!\n");
         }
         target.setHealth(targetHealth);
+        /*
         if(target.getHealth() == 0){
             healAll();
         }
+        */
         return text;
     }
 
     public void heal(){
-        Random d4 = new Random();
-        setHealth(health + (d4.nextInt(4)+1));
+        setHealth(health + 1);
     }
 
     public void healAll(){
