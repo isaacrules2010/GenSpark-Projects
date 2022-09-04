@@ -11,3 +11,5 @@ Project|Title|Status
 5 | Hangman | Done
 6 | Humans vs Goblins | Done
 7 | Hangman_Functional | Done
+8 | Humans vs Goblins GUI | Done
+
