@@ -4,8 +4,8 @@
 ---
 Project|Title|Status
 ---|---|---
-1 | DragonCave | Rewritten
-2 | GuessTheNumber | Rewritten
+1 | DragonCave | Done
+2 | GuessTheNumber | Done
 3 | Exception Handling | Done
 4 | Unit Testing | Done
 5 | Hangman | Done
