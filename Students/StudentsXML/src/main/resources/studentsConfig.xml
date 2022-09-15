@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+    <bean id="Student" class="Student">
+        <property name="id" value="123"/>
+        <property name="name" value="Isaac"/>
+        <property name="add" ref="Address"/>
+        <property name="ph">
+            <list>
+                <ref bean="homePhone"/>
+                <ref bean="mobilePhone"/>
+                <ref bean="beast"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="homePhone" class="Phone">
+        <constructor-arg name="number" value="(123)4567890"/>
+    </bean>
+
+    <bean id="mobilePhone" class="Phone">
+        <property name="mobile" value="1234567890"/>
+    </bean>
+    <bean id="beast" class="Phone">
+        <property name="mobile" value="666"/>
+    </bean>
+
+    <bean id="Address" class="Address">
+        <property name="city" value="Winchester"/>
+        <property name="state" value="TN"/>
+        <property name="country" value="US"/>
+        <property name="zip" value="37398"/>
+    </bean>
+</beans>
