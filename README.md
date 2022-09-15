@@ -14,7 +14,7 @@ Project|Title|Status
 8 | Humans vs Goblins GUI | Done
 
 ---
-###Spring Assignments
+### Spring Assignments
 Assign. | Title | Status
 --- | --- | ---
 1 | 3 different projects, each using one of the 3 ways to config Spring | in-progress
