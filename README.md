@@ -13,3 +13,10 @@ Project|Title|Status
 7 | Hangman_Functional | Done
 8 | Humans vs Goblins GUI | Done
 
+---
+###Spring Assignments
+Assign. | Title | Status
+--- | --- | ---
+1 | 3 different projects, each using one of the 3 ways to config Spring | in-progress
+
+
