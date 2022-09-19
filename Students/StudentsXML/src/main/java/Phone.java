@@ -2,7 +2,7 @@ public class Phone {
     private String mobile;
 
     public Phone(){
-        mobile = "";
+
     }
     public Phone(String number){
         mobile = number;

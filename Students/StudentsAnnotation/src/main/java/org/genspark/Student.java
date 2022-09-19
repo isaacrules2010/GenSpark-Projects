@@ -1,13 +1,25 @@
+package org.genspark;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
 import java.util.List;
 
+@Component
 public class Student {
-    public Student() {
-    }
     private int id;
     private String name;
+
+    @Autowired
     private List<Phone> ph;
+
+    @Autowired
     private Address add;
 
+    public Student() {
+        //System.out.println("Creating a Student");
+    }
     public void info(){
         System.out.println("Name: "+name+
                 "\nID: "+id+
@@ -50,11 +62,11 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student\n{" +
-                "id = " + id +
-                "\nname = " + name +
-                "\nphone = " + ph +
-                "\naddress = " + add +
-                "\n}";
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", ph=" + ph +
+                ", add=" + add +
+                '}';
     }
 }

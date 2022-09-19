@@ -6,33 +6,18 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
     <bean id="Student" class="Student">
-        <property name="id" value="123"/>
-        <property name="name" value="Isaac"/>
-        <property name="add" ref="Address"/>
         <property name="ph">
             <list>
-                <ref bean="homePhone"/>
-                <ref bean="mobilePhone"/>
-                <ref bean="beast"/>
+                <ref bean="Phone"/>
+                <ref bean="Phone"/>
+                <ref bean="Phone"/>
             </list>
         </property>
     </bean>
 
-    <bean id="homePhone" class="Phone">
-        <constructor-arg name="number" value="(123)4567890"/>
-    </bean>
+    <bean id="Phone" class="Phone"/>
 
-    <bean id="mobilePhone" class="Phone">
-        <property name="mobile" value="1234567890"/>
-    </bean>
-    <bean id="beast" class="Phone">
-        <property name="mobile" value="666"/>
-    </bean>
+<!--Constructor Injection-->
+    <bean id="Address" class="Address"/>
 
-    <bean id="Address" class="Address">
-        <property name="city" value="Winchester"/>
-        <property name="state" value="TN"/>
-        <property name="country" value="US"/>
-        <property name="zip" value="37398"/>
-    </bean>
 </beans>

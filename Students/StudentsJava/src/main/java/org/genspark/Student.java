@@ -1,12 +1,20 @@
+package org.genspark;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.List;
 
 public class Student {
-    public Student() {
-    }
     private int id;
     private String name;
+    @Autowired
     private List<Phone> ph;
+    @Autowired
     private Address add;
+
+    public Student() {
+        //System.out.println("created a student");
+    }
 
     public void info(){
         System.out.println("Name: "+name+
@@ -14,6 +22,16 @@ public class Student {
                 "\nNumbers: "+ph+
                 "\nAddress: "+add
         );
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", ph=" + ph +
+                ", add=" + add +
+                '}';
     }
 
     public int getId() {
@@ -46,15 +64,5 @@ public class Student {
 
     public void setAdd(Address add) {
         this.add = add;
-    }
-
-    @Override
-    public String toString() {
-        return "Student\n{" +
-                "id = " + id +
-                "\nname = " + name +
-                "\nphone = " + ph +
-                "\naddress = " + add +
-                "\n}";
     }
 }
